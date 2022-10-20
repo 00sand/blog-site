@@ -5,15 +5,21 @@ layout: 'base.njk'
 
 
        
-<div class="section container">
-<h1 class="section-title">Recent articles</h1>
-
+<div class="section">
+  <div class="container">
+    <div class = "columns">
+       <div class = "column is-1"></div>
+      <div class = "column">
+        <h1 class="title is-2 pb-2">Recent articles</h1>
+      </div>
+    </div>
   <ul role="list" class="articles__list flow">
     {%- for post in collections.post -%}
       {% include 'article-snippet.njk' %}
     {%- endfor %}
   </ul>
-  </div>
+ </div>
+</div>
 
 
 

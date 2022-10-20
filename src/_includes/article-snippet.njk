@@ -1,9 +1,15 @@
  <li>
-      <article class="snippet">
-        <h3 class = "snippet__title"><a href="{{post.url}}">{{post.data.title}}</h3>
-        <img src ="{{post.data.image}}" alt="{{post.data.imageAlt}}" class="snippet_image">
+      <article class="columns">
+        <div class="column is-1"></div>
+        <div class = 'column content'>
+        <h3 class = "title is-3"><a href="{{post.url}}">{{post.data.title}}</h3>
         <p class = "snippet__meta">by <span>{{post.data.author}}</span> on <span>{{ post.date | postDate }}</span></p>
-        <p class = "snippet__body">{{post.data.description}}</p>
-        <a href="{{ post.url }}" class="btn btn--primary">Continue Reading</a>
+        <p class = "pb-4 has-text-grey-darker">{{post.data.description}}</p>
+       <button class="button is-warning"><a href="{{ post.url }}">Continue Reading</a></button>
+        </div>
+        <div class = "column">
+          <img class="images" src ="{{post.data.image}}" alt="{{post.data.imageAlt}}" class="snippet_image">
+        </div>
+        <div class="column is-1"></div>
       </article>
     </li>
