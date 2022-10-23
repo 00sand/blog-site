@@ -10,6 +10,20 @@
   min-width: 345px;
 }
 
+.navbar {
+  min-height: unset;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.logoHead {
+  width: 40px;
+  height: 70px;
+}
+
 a {
   color: #5A5A5A;
 }
