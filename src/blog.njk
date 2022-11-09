@@ -5,7 +5,7 @@ layout: 'base.njk'
 
 
        
-<div class="section">
+<div class="section hidden">
   <div class="container">
     <div class = "columns">
        <div class = "column is-1"></div>
@@ -13,7 +13,7 @@ layout: 'base.njk'
         <h1 class="title is-2 pb-2 is-underlined">Recent articles</h1>
       </div>
     </div>
-  <ul role="list" class="articles__list flow">
+  <ul role="list" class="articles__list flow hidden">
     {%- for post in collections.post -%}
       {% include 'article-snippet.njk' %}
     {%- endfor %}
